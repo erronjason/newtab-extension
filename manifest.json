@@ -1,0 +1,16 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "content_security_policy": "script-src 'self' https://erronjason.com; object-src 'self'",
+   "description": "Replace new tab screen with a more refined feel.",
+   "icons": {
+      "128": "images/icon128.png",
+      "96": "images/icon96.png",
+      "16": "images/icon16.png"
+   },
+   "manifest_version": 2,
+   "name": "Simplyhome",
+   "permissions": [ "storage", "unlimitedStorage"],
+   "version": "0.7"
+}

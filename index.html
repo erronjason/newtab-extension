@@ -1,0 +1,141 @@
+
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="shortcut icon" type="image/gif" href=" " />
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+			body{
+			background: #ffffff;
+			background: radial-gradient(ellipse at center, #fff 0%, #eee 100%);
+			background: -moz-radial-gradient(#fff, #eee);
+			background-attachment:fixed;
+			}
+			.keepcentered{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 480px;
+			height: 300px;
+			margin-left: -240px;
+			margin-top: -150px;
+			font-weight: 100;
+			}
+			body{
+			-webkit-text-stroke: 0.2px;
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			color: #ad9a78;
+			margin: 5px;
+			}
+			td, tr{
+			width: 20%;
+			text-align: center;
+			}
+			a{
+			font-weight: 100;
+			color: #999;
+			}
+			a:hover{
+			color: #d64937;
+			}
+			a:link{
+			text-decoration: none;
+			text-shadow: 0px 0px 0px #000;
+			}
+			#time{
+                        color: #c7c7c7;
+                        font-size: 6em;
+			-webkit-text-stroke: 0.1px;
+			font-family: sans-serif, 'Source Sans Pro';
+			}
+		</style>
+	</head>
+		
+	<body>
+		<div class="keepcentered">
+			<center><div id="time"></div></font></center>
+			<p><center>
+			<table width="100%" border="0px">
+				<tr>
+					<td>Google</td>
+					<td>Server</td>
+					<td>Links</td>
+					<td>Code</td>
+					<td>Other</td>
+				</b>
+				<tr>
+					<td><a href="http://gmail.com">Gmail</a></td>
+					<td><a href="http://erronjason.com/files">Files</a></td>
+					<td><a href="http://reddit.com">Reddit</a></td>
+					<td><a href="chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html">Terminal</a></td>
+					<td><a href="http://mint.com">Mint.com</a></td>
+				</tr>
+				<tr>
+					<td><a href="http://play.google.com/music">Music</a></td>
+					<td><a href="http://erronjason.com/cpanel">cPanel</a></td>
+					<td><a href="https://facebook.com/">Facebook</a></td>
+					<td><a href="https://github.com/">Github</a></td>
+					<td><a href="https://intranet.hivelocity.net/">Intranet</a></td>
+				</tr>
+				<tr>
+					<td><a href="http://drive.google.com">Drive</a></td>
+					<td><a href="http://erronjason.com/webmail">Webmail</a></td>
+					<td><a href="https://manage.hivelocity.net/admin/supportmgr/">&Uuml;bersmith</a></td>
+					<td><a href="http://overapi.com">OverAPI</a></td>
+					<td><a href="https://regions.com">Regions</a></td>
+				</tr>
+				<tr>
+					<td><a href="http://plus.google.com">G+</a></td>
+					<td><a href="http://drive.erronjason.com">errDrive</a></td>
+					<td><a href="https://email.hivelocity.net/">Work Email</a></td>
+					<td><a href="http://pastebin.com/">Pastebin</a></td>
+					<td><a href="https://hive.hivelocity.net/admin/passwords/password/">The Hive</a></td>
+				</tr>
+			</table>
+			<br>
+			</center>
+		</p>
+</div>
+	</body>
+
+	<script type="text/javascript" src="js/clock.js"></script>
+	<script type="text/javascript" src="js/annyang.min.js"></script>
+	<script>
+	// Voice activation stuff
+	// None of this works in the chrome extension, currently
+		if (annyang) { 
+		
+		var reddit = function() {
+		window.location.replace('http://reddit.com');
+		}
+		var facebook = function() {
+		window.location.replace('http://facebook.com');
+		}
+		var gplus = function() {
+		window.location.replace('http://plus.google.com');
+		}
+		var intranet = function() {
+		window.location.replace('http://intranet.hivelocity.net');
+		}
+		var ubersmith = function() {
+		window.location.replace('http://manage.hivelocity.net');
+		}
+		var commands = {
+		
+		'open reddit': reddit,
+		'open g plus': gplus,
+		'open google plus': gplus,
+		'open facebook': facebook,
+		'open intranet': intranet,
+		'open uber smith': ubersmith,
+		'open uber': ubersmith,
+		};
+
+		annyang.addCommands(commands);
+		annyang.start();
+		}
+	</script>
+</html>
